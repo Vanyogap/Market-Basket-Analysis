@@ -1,0 +1,110 @@
+1.minimum support :1250
+
+2.minimum confidence :50
+
+3.Apriori Approach:
+
+
+
+3a.Unique item list:
+Coffee Powder
+Milk
+Lassi
+Ghee
+Sweet
+Tea Powder
+Cheese
+Yougurt
+Panner
+Sugar
+Butter
+Bread
+
+
+3b.frequent item sets:
+['Sweet']----->5483
+['Yougurt']----->5503
+['Lassi']----->5432
+['Milk']----->5526
+['Butter']----->5481
+['Panner']----->5444
+['Ghee']----->5510
+['Cheese']----->5476
+['Coffee Powder']----->5509
+['Bread']----->5484
+['Tea Powder']----->5383
+['Sugar']----->5482
+['Tea Powder', 'Ghee']----->2498
+['Cheese', 'Sweet']----->2496
+['Lassi', 'Milk']----->2501
+['Sweet', 'Ghee']----->2578
+['Butter', 'Yougurt']----->2503
+['Coffee Powder', 'Sweet']----->2466
+['Sugar', 'Sweet']----->2498
+['Lassi', 'Butter']----->2460
+['Coffee Powder', 'Ghee']----->2473
+['Bread', 'Ghee']----->2479
+['Sugar', 'Ghee']----->2486
+['Lassi', 'Yougurt']----->2518
+['Yougurt', 'Panner']----->2517
+['Sugar', 'Cheese']----->2571
+['Cheese', 'Coffee Powder']----->2513
+['Yougurt', 'Ghee']----->2529
+['Butter', 'Sweet']----->2497
+['Tea Powder', 'Butter']----->2484
+['Bread', 'Sweet']----->2445
+['Butter', 'Panner']----->2439
+['Sugar', 'Tea Powder']----->2532
+['Tea Powder', 'Coffee Powder']----->2497
+['Butter', 'Milk']----->2485
+['Sugar', 'Bread']----->2444
+['Tea Powder', 'Yougurt']----->2505
+['Bread', 'Coffee Powder']----->2576
+['Coffee Powder', 'Milk']----->2507
+['Bread', 'Milk']----->2511
+['Sugar', 'Milk']----->2512
+['Sugar', 'Butter']----->2550
+['Butter', 'Coffee Powder']----->2506
+['Yougurt', 'Milk']----->2391
+['Sugar', 'Yougurt']----->2503
+['Coffee Powder', 'Yougurt']----->2505
+['Cheese', 'Panner']----->2418
+['Lassi', 'Cheese']----->2539
+['Bread', 'Tea Powder']----->2504
+['Ghee', 'Panner']----->2529
+['Cheese', 'Yougurt']----->2495
+['Sugar', 'Coffee Powder']----->2516
+['Lassi', 'Panner']----->2517
+['Butter', 'Cheese']----->2477
+['Yougurt', 'Sweet']----->2543
+['Cheese', 'Milk']----->2417
+['Butter', 'Ghee']----->2539
+['Tea Powder', 'Milk']----->2483
+['Sweet', 'Panner']----->2451
+['Lassi', 'Sweet']----->2491
+['Bread', 'Yougurt']----->2528
+['Coffee Powder', 'Panner']----->2563
+['Lassi', 'Ghee']----->2502
+['Sweet', 'Milk']----->2555
+['Lassi', 'Coffee Powder']----->2523
+['Bread', 'Panner']----->2503
+['Bread', 'Lassi']----->2478
+['Tea Powder', 'Cheese']----->2468
+['Bread', 'Cheese']----->2530
+['Tea Powder', 'Sweet']----->2503
+['Panner', 'Milk']----->2483
+['Bread', 'Butter']----->2467
+['Ghee', 'Milk']----->2511
+['Tea Powder', 'Lassi']----->2530
+['Tea Powder', 'Panner']----->2409
+['Sugar', 'Lassi']----->2512
+['Sugar', 'Panner']----->2482
+['Cheese', 'Ghee']----->2472
+['Lassi', 'Sweet', 'Panner']----->1265
+
+4.Time taken for execution using Apriori approach:28.1482568
+
+5.Association Rules:
+
+('Lassi', 'Panner')   -->{'Sweet'}      :50.66%
+('Sweet', 'Panner')   -->{'Lassi'}      :50.5%
